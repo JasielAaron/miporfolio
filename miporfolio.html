@@ -3,22 +3,90 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Mi Porfolio</title>
+  <link rel="stylesheet" href="miporfolio.css"> <!--Created CSS StyleSheet and linked it to HTML-->
 </head>
 <body>
-  <header>  <!-- Added header and contact info-->
-    <p>
-      Jasiel
-    </p>
-    <nav> <!--Created the nav bar to seperate the different sections on my header-->
-      <ul>
-        <li>About Me</li>
-        <li>Work</li>
-        <li>Contact</li>
-        <li>Resume</li>
-      </ul>
+  <header>
+    <h1 class="name">Jasiel</h1> <!--Created h1 to reflect on top on my page -->
+    <nav class="navbar"> <!--Addded the nav bar so I can click on the sections and it can take me to those sections-->
+      <a href="#aboutme">About Me</a>
+      <a href="#work">Work</a>
+      <a href="#contactme">Contact Me</a>
+      <a href="#resume">Resume</a>
     </nav>
   </header>
+<!--Created this div to have my banner about the image to my div-->
+  <div class="banner"> 
+    <img src="coding-in-the-classroom.avif" alt="coding-in-the-classroom">
+  </div>
+  
+
+<!--Added id to communicate with my header, so the right section is open -->
+<main>
+<section id="aboutme">
+    <H1>About Me</H1> 
+    <!--With Image I was able to provide a pic to site -->
+   <div> <img class="mypic" src="Screenshot 2024-01-01 at 6.16.20 PM.png"></div>
+    <p>Hello my name is Jasiel Soto Gonzalez. I am new to developing, but excited to learn the in and outs. 
+      <br>With the skills I've inquired I've been able to complete some projects using HTML and CSS.() </p>  <!--added a line break so "With" would start in a new line  -->
+</section>
+
+<!--Added id to communicate with my header, so the right section is open -->
+<!--For this section I created all my divs and gave them the same class name I wanted to make one of the  divs bigger than the rest but I had a hard time  making that happen!-->
+
+  <section id="work"> 
+    <h1>Work</h1>
+    <div class="project1">
+      <div class="projects grow"> 
+        <header>Hariseon</header>
+        <a href="file:///Users/jasielgonzalez/bootcamp/challange1/index.html">
+        <img class="projectimg" src="Screenshot 2023-12-20 at 9.39.22 PM.png">
+      </a>
+      <div class="description">Changing divs to semantic HTML</div>
+      </div>
+    </div>
+    
+    <div class="projects"> 
+      <header>Mini Project</header>
+      <a href="file:///Users/jasielgonzalez/bootcamp/mini-project/index.html">
+      <img  class="projectimg" src="Screenshot 2024-01-01 at 6.44.55 PM.png"  >
+     </a>
+     <div class="description"> Using HTML and CSS created this Mini-Project</div>
+    </div>
+
+    <div>
+      <div class="projects">
+        <header>Study Guide</header>
+        <a href="file:///Users/jasielgonzalez/bootcamp/prework-study-guide/index.html">
+          <img class="projectimg"  src="Screenshot 2024-01-04 at 10.27.03 PM.png">
+  
+        </a>
+        <div class="description"> Study guide using Basic HTML and CSS properties</div>
+      </div>
+
+    </div>
+
+    
+    
+  </section>
+<!--Created an contact section with ID so that it communicates with my nav bar -->
+
+  <section id="contactme">
+    <h1>Contact Me</h1>
+    <p>Email: jasiel.7</p>
+    <p>Phone: 806-494-1676</p>
+  </section>
+<!--To first of my page created my footer-->
+
+  <footer>
+    Thanks For Visiting!
+  </footer>
+  
+</main>  
+
+  
+ 
 
 </body>
 </html>
